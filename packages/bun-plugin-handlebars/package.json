@@ -1,0 +1,24 @@
+{
+  "name": "bun-plugin-handlebars",
+  "version": "0.1.0",
+  "type": "module",
+  "module": "src/index.ts",
+  "scripts": {
+    "lint": "biome lint --write src",
+    "format": "biome format --write src"
+  },
+  "packageManager": "bun@1.2.23",
+  "repository": {
+    "type": "git",
+    "directory": "packages/bun-plugin-handlebars",
+    "url": "https://github.com/Omikorin/bun-plugin-handlebars.git"
+  },
+  "author": "Michał Korczak (https://omikor.in)",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.23"
+  }
+}
