@@ -7,7 +7,10 @@ export async function buildProject() {
     outdir: 'dist',
     plugins: [
       handlebars({
-        context: { author: 'Michał Korczak', items: ['Naruto', 'Steins;Gate', 'Bleach', '...'] },
+        context: {
+          author: 'Michał Korczak',
+          items: ['Naruto', 'Steins;Gate', 'Bleach', '...'],
+        },
         partialDirectory: resolve(__dirname, 'src/partials'),
         helpers: {
           eq: (a, b) => a === b,

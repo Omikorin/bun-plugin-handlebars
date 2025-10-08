@@ -1,14 +1,10 @@
 import { watch } from 'node:fs';
 import { buildProject } from './build.js';
 
-watch(
-  './src',
-  { recursive: true },
-  async (event, filename) => {
-    console.log(`Rebuilding because of ${event} in ${filename}`);
-    await buildProject();
-  },
-);
+watch('./src', { recursive: true }, async (event, filename) => {
+  console.log(`Rebuilding because of ${event} in ${filename}`);
+  await buildProject();
+});
 
 console.log('Serving on http://localhost:3000');
 
