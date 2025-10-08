@@ -13,7 +13,7 @@
   "packageManager": "bun@1.2.23",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Omikorin/bun-plugin-handlebars.git"
+    "url": "https://github.com/Omikorin/bun-plugin-hbs.git"
   },
   "author": "Michał Korczak (https://omikor.in)",
   "license": "ISC",

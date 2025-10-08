@@ -1,4 +1,4 @@
-# bun-plugin-handlebars
+# bun-plugin-hbs
 
 To install dependencies:
 

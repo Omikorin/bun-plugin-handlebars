@@ -10,11 +10,11 @@
   "repository": {
     "type": "git",
     "directory": "packages/create-bun-hbs",
-    "url": "https://github.com/Omikorin/bun-plugin-handlebars.git"
+    "url": "https://github.com/Omikorin/bun-plugin-hbs.git"
   },
   "author": "Michał Korczak (https://omikor.in)",
   "devDependencies": {
     "@types/bun": "^1.2.23",
-    "bun-plugin-handlebars": "workspace:*"
+    "bun-plugin-hbs": "workspace:*"
   }
 }

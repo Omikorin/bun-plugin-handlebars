@@ -1,5 +1,5 @@
 import { resolve } from 'node:path';
-import handlebars from 'bun-plugin-handlebars';
+import handlebars from 'bun-plugin-hbs';
 
 export async function buildProject() {
   const result = await Bun.build({

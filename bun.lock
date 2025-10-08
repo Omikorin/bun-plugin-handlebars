@@ -8,8 +8,8 @@
         "@types/bun": "^1.2.23",
       },
     },
-    "packages/bun-plugin-handlebars": {
-      "name": "bun-plugin-handlebars",
+    "packages/bun-plugin-hbs": {
+      "name": "bun-plugin-hbs",
       "version": "0.1.0",
       "dependencies": {
         "handlebars": "^4.7.8",
@@ -23,7 +23,7 @@
       "version": "0.1.0",
       "devDependencies": {
         "@types/bun": "^1.2.23",
-        "bun-plugin-handlebars": "workspace:*",
+        "bun-plugin-hbs": "workspace:*",
       },
     },
   },
@@ -52,7 +52,7 @@
 
     "@types/react": ["@types/react@19.1.13", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-hHkbU/eoO3EG5/MZkuFSKmYqPbSVk5byPFa3e7y/8TybHiLMACgI8seVYlicwk7H5K/rI2px9xrQp/C+AUDTiQ=="],
 
-    "bun-plugin-handlebars": ["bun-plugin-handlebars@workspace:packages/bun-plugin-handlebars"],
+    "bun-plugin-hbs": ["bun-plugin-hbs@workspace:packages/bun-plugin-hbs"],
 
     "bun-types": ["bun-types@1.2.23", "", { "dependencies": { "@types/node": "*" }, "peerDependencies": { "@types/react": "^19" } }, "sha512-R9f0hKAZXgFU3mlrA0YpE/fiDvwV0FT9rORApt2aQVWSuJDzZOyB5QLc0N/4HF57CS8IXJ6+L5E4W1bW6NS2Aw=="],
 
