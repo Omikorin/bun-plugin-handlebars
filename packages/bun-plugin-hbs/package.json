@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "type": "module",
   "module": "src/index.ts",
-  "scripts": {
-    "lint": "biome lint --write src",
-    "format": "biome format --write src"
-  },
+  "scripts": {},
   "packageManager": "bun@1.2.23",
   "repository": {
     "type": "git",
