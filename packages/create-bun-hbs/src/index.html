@@ -8,6 +8,16 @@
 <body>
   <h1>Welcome to the Handlebars Sample Page</h1>
   <p>This page demonstrates including a partial using Handlebars.</p>
+
+  Some context tests:
+  <p>Plugin author: {{author}}</p>
+
+  Favourite anime:
+  <ul>
+    {{#each items}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
 </body>
 
 </html>

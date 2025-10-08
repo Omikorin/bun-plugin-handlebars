@@ -3,11 +3,15 @@ import hbs from 'handlebars';
 
 import { registerPartials } from './partials';
 
+type Context = Record<string, unknown>;
+
 export interface PluginConfig {
+  context?: Context;
   partialDirectory?: string | string[];
 }
 
 export default function handlebars({
+  context,
   partialDirectory,
 }: PluginConfig = {}): BunPlugin {
   return {
@@ -22,7 +26,7 @@ export default function handlebars({
 
         const html = await Bun.file(args.path).text();
         const template = hbs.compile(html);
-        const contents = template({});
+        const contents = template(context || {});
 
         return {
           contents,
