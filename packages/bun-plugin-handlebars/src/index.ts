@@ -1,5 +1,5 @@
 import type { BunPlugin } from 'bun';
-import hbs, { type RuntimeOptions} from 'handlebars';
+import hbs, { type HelperDeclareSpec, type RuntimeOptions } from 'handlebars';
 
 import { registerPartials } from './partials';
 
@@ -13,6 +13,7 @@ export interface PluginConfig {
   compileOptions?: CompileOptions;
   runtimeOptions?: RuntimeOptions;
   partialDirectory?: string | string[];
+  helpers?: HelperDeclareSpec;
 }
 
 export default function handlebars({
@@ -20,12 +21,17 @@ export default function handlebars({
   compileOptions,
   runtimeOptions,
   partialDirectory,
+  helpers,
 }: PluginConfig = {}): BunPlugin {
   return {
     name: 'handlebars',
     target: 'bun',
 
     setup(builder) {
+      if (helpers) {
+        hbs.registerHelper(helpers);
+      }
+
       builder.onLoad({ filter: /\.html$/ }, async (args) => {
         if (partialDirectory) {
           await registerPartials(partialDirectory);
