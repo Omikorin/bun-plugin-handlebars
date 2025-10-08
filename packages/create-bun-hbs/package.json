@@ -1,0 +1,20 @@
+{
+  "name": "create-bun-hbs",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build.js",
+    "dev": "bun run dev.js"
+  },
+  "packageManager": "bun@1.2.23",
+  "repository": {
+    "type": "git",
+    "directory": "packages/create-bun-hbs",
+    "url": "https://github.com/Omikorin/bun-plugin-handlebars.git"
+  },
+  "author": "Michał Korczak (https://omikor.in)",
+  "devDependencies": {
+    "@types/bun": "^1.2.23",
+    "bun-plugin-handlebars": "workspace:*"
+  }
+}
