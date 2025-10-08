@@ -9,6 +9,12 @@ export async function buildProject() {
       handlebars({
         context: { author: 'Michał Korczak', items: ['Naruto', 'Steins;Gate', 'Bleach', '...'] },
         partialDirectory: resolve(__dirname, 'src/partials'),
+        helpers: {
+          eq: (a, b) => a === b,
+          lookup: (obj, key) => obj?.[key] || null,
+          hasItems: (array) => Array.isArray(array) && array.length > 0,
+          uppercase: (str) => str.toUpperCase(),
+        },
       }),
     ],
   });
