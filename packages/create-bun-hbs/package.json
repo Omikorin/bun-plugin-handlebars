@@ -14,7 +14,7 @@
   },
   "author": "Michał Korczak (https://omikor.in)",
   "devDependencies": {
-    "@types/bun": "^1.2.23",
+    "@types/bun": "catalog:",
     "bun-plugin-hbs": "workspace:*"
   }
 }

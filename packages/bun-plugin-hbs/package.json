@@ -16,9 +16,9 @@
   "author": "Michał Korczak (https://omikor.in)",
   "license": "ISC",
   "dependencies": {
-    "handlebars": "^4.7.8"
+    "handlebars": "catalog:"
   },
   "devDependencies": {
-    "@types/bun": "^1.2.23"
+    "@types/bun": "catalog:"
   }
 }
