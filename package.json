@@ -18,12 +18,10 @@
   "author": "Michał Korczak (https://omikor.in)",
   "license": "ISC",
   "catalog": {
-    "@biomejs/biome": "^2.2.5",
     "@types/bun": "^1.2.23",
     "handlebars": "^4.7.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "catalog:",
-    "@types/bun": "catalog:"
+    "@biomejs/biome": "^2.2.5"
   }
 }
