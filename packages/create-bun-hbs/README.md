@@ -12,6 +12,12 @@ Scaffold a project:
 bun create bun-hbs
 ```
 
+optionally set a custom name:
+
+```bash
+bun create bun-hbs my-project
+```
+
 ### Configuring
 
 For more advanced configuration options and usage details, refer to the [bun-plugin-hbs package](https://github.com/Omikorin/bun-plugin-handlebars/tree/main/packages/bun-plugin-hbs).

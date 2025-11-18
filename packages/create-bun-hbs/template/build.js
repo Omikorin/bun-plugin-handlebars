@@ -3,7 +3,7 @@ import handlebars from 'bun-plugin-hbs';
 
 export async function buildProject() {
   const result = await Bun.build({
-    entrypoints: ['src/index.html'],
+    entrypoints: [ resolve(__dirname, 'src/index.html')],
     outdir: 'dist',
     plugins: [
       handlebars({

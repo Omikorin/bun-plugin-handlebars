@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "build": "bun run build.js",
-    "dev": "bun run --hot dev.js"
+    "build": "bun run template/build.js",
+    "dev": "bun run --hot template/dev.js"
   },
   "packageManager": "bun@1.2.23",
   "repository": {
@@ -13,6 +13,7 @@
     "url": "https://github.com/Omikorin/bun-plugin-hbs.git"
   },
   "author": "Michał Korczak (https://omikor.in)",
+  "bin": "./bin.js",
   "devDependencies": {
     "@types/bun": "catalog:",
     "bun-plugin-hbs": "workspace:*"

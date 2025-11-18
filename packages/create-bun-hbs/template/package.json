@@ -1,0 +1,14 @@
+{
+  "name": "bun-handlebars",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build.js",
+    "dev": "bun run --hot dev.js"
+  },
+  "packageManager": "bun@1.2.23",
+  "devDependencies": {
+    "@types/bun": "^1.2.23",
+    "bun-plugin-hbs": "^0.1.0"
+  }
+}

@@ -1,7 +1,8 @@
 import { watch } from 'node:fs';
+import { resolve } from 'node:path';
 import { buildProject } from './build.js';
 
-watch('./src', { recursive: true }, async (event, filename) => {
+watch(resolve(__dirname, './src'), { recursive: true }, async (event, filename) => {
   console.log(`Rebuilding because of ${event} in ${filename}`);
   await buildProject();
 });
